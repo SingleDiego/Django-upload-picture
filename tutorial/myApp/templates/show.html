@@ -1,0 +1,17 @@
+<html>
+{% load staticfiles %}
+
+<body>
+	<p>静态文件：</p>
+		<img src="{% static 'img/jtwj.jpg' %}" %}>
+		
+	<p>动态文件：</p>
+	{% for pic in pictures %}
+		<img src="/static/uploads/{{ pic.picture }}" %}>
+		<br><br>
+	{% endfor %}
+	
+
+</body>
+
+</html>
